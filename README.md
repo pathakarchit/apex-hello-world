@@ -1,0 +1,110 @@
+# apex-hello-world
+
+Create your first hello world project in Apex/Salesforce code.
+
+```java
+global class HelloWorld {
+  public String hello() {
+    return 'Hello World!';
+  }
+}
+```
+
+```java
+@isTest
+private class HelloWorldTest {
+  @isTest static void hello() {
+    HelloWorld hello_world = new HelloWorld();
+    String result = hello_world.hello();
+
+    system.assertEquals(result, 'Hello World!');
+  }
+}
+```
+
+## Tutorial
+
+[Create a salesforce.com developer account](https://developer.salesforce.com/signup).
+
+You'll receive an email from Salesforce with a link to confirm. Click it.
+
+On the next screen, set your password. Yeah, it's an odd flow, but it's salesforce so what do you expect.
+
+You now have a developer account.
+
+Generate your security token. We will need this later. While logged into your developer account, click "Your Name > My Settings" at the top right portion of your developer account dashboard.
+
+Then on the left side of the screen click "Personal > Reset My Security Token". Click the "Reset Security Token" button. Salesforce emails you a security token. You will need this later.
+
+[Install Sublime Text 3](http://www.sublimetext.com/3).
+
+[Install Mavens Mate](http://mavensmate.com/).
+
+Open up Sublime Text 3, and then open up Mavens Mate on your machine. There should be a Mavens Mate icon, at the top bar of your screen. Click it and then click "Plugins".
+
+On the next window, click "Install Plugin". This installs the Mavens Mate plugin into Sublime Text 3.
+
+Close and reopen Sublime Text 3.
+
+Click Mavens Mate > Settings > User at the top Sublime Text 3 Toolbar.
+
+This will open a file called `mavensmate.sublime-settings`. Paste the following in that file. Adjust to the path and directory you want to store your salesforce code in.
+
+```json
+{
+  "mm_workspace": "/Users/scottmotte/code/salesforce"
+}
+```
+
+Save and close that file.
+
+With Sublime Text 3 still open, click Mavens Mate > Project > New Project.
+
+On the next screen enter the following:
+
+* For project name: name it something you'd like
+* For username: enter your email address
+* For password: enter your password APPENDED with your salesforce security token. (see above for how to generate the security token) 
+* Click the Advanced tab and unselect everything except ApexClass and CustomObject.
+
+When you're ready click the 'Create Project' button.
+
+This will create the project up on Salesforce.com and locally on your machine. That's what we want. It's the way salesforce development works. Now when we develop locally it will sync things up remotely. Yeah, it's effing strange. I feel bad for Salesforce developers. 
+
+With Sublime Text 3 still open, click "Mavens Mate > Metadata > New Apex Class". Then from the popup click "Default". Finally, name your class "HelloWorld".
+
+Edit that file to look like the following.
+
+```java
+global class HelloWorld {
+  public String hello() {
+    return 'Hello World!';
+  }
+}
+```
+
+Next, click "Mavens Mate > Metadata > New Apex Class". Then from the popup click "Unit Test". Finally, name this class "HelloWorldTest".
+
+Edit that file to look like the following.
+
+```java
+@isTest
+private class HelloWorldTest {
+  @isTest static void hello() {
+    HelloWorld hello_world = new HelloWorld();
+    String result = hello_world.hello();
+
+    system.assertEquals(result, 'Hello World!');
+  }
+}
+```
+
+Let's run this test.
+
+Click "Mavens Mate > Unit Testing > Open Apex Test Runner UI".
+
+On the next screen, make sure the HelloWorldTest is selected and click the Run Tests button.
+
+Congrats, you wrote your first Apex hello world code! 
+
+It was much more difficult than most languages, but we got through it. If you can avoid it, don't become a salesforce developer. Learn [Go](http://golang.org/), [Ruby](https://www.ruby-lang.org) or [NodeJS](http://nodejs.org/). You will be ![happier](http://media.giphy.com/media/iFmxR5QdkEQKI/giphy.gif).
