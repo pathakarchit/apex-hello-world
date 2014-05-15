@@ -2,7 +2,7 @@
 
 Create your first hello world project in Apex/Salesforce code.
 
-```apex
+```java
 global class HelloWorld {
   public String hello() {
     return 'Hello World!';
@@ -10,7 +10,7 @@ global class HelloWorld {
 }
 ```
 
-```apex
+```java
 @isTest
 private class HelloWorldTest {
   @isTest static void hello() {
