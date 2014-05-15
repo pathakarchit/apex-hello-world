@@ -124,4 +124,7 @@ On the next screen, make sure the HelloWorldTest is selected and click the Run T
 
 Congrats, you wrote your first Apex hello world code! 
 
-It was much more difficult than most languages, but we got through it. If you can avoid it, don't become a salesforce developer. Learn [Go](http://golang.org/), [Ruby](https://www.ruby-lang.org) or [NodeJS](http://nodejs.org/). You will be ![happier](http://media.giphy.com/media/iFmxR5QdkEQKI/giphy.gif).
+![](http://media.giphy.com/media/haOPSTE9rVqlW/giphy.gif)
+
+It was much more difficult than most languages, but we got through it. If you can avoid it, don't become a salesforce developer. Learn [Go](http://golang.org/), [Ruby](https://www.ruby-lang.org) or [NodeJS](http://nodejs.org/). You will be even [happier](http://media.giphy.com/media/iFmxR5QdkEQKI/giphy.gif).
+
