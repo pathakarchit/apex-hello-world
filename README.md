@@ -24,6 +24,8 @@ private class HelloWorldTest {
 
 ## Tutorial
 
+### Setup Salesforce.com
+
 [Create a salesforce.com developer account](https://developer.salesforce.com/signup).
 
 ![](https://raw.githubusercontent.com/scottmotte/apex-hello-world/master/apex-hello-world-0.png)
@@ -39,6 +41,8 @@ Generate your security token. We will need this later. While logged into your de
 Then on the left side of the screen click "Personal > Reset My Security Token". Click the "Reset Security Token" button. Salesforce emails you a security token. You will need this later.
 
 ![](https://raw.githubusercontent.com/scottmotte/apex-hello-world/master/apex-hello-world-4.png)
+
+### Setup local environment
 
 [Install Sublime Text 3](http://www.sublimetext.com/3).
 
@@ -66,6 +70,8 @@ This will open a file called `mavensmate.sublime-settings`. Paste the following 
 
 Save and close that file.
 
+### Create a project
+
 With Sublime Text 3 still open, click Mavens Mate > Project > New Project.
 
 ![](https://raw.githubusercontent.com/scottmotte/apex-hello-world/master/apex-hello-world-3.png)
@@ -84,6 +90,8 @@ When you're ready click the 'Create Project' button.
 
 This will create the project up on Salesforce.com and locally on your machine. That's what we want. It's the way salesforce development works. Now when we develop locally it will sync things up remotely. Yeah, it's strange. I feel bad for Salesforce developers. 
 
+### Create a class
+
 With Sublime Text 3 still open, click "Mavens Mate > Metadata > New Apex Class". Then from the popup click "Default". Finally, name your class "HelloWorld".
 
 Edit that file to look like the following.
@@ -95,6 +103,8 @@ global class HelloWorld {
   }
 }
 ```
+
+### Create a test class
 
 Next, click "Mavens Mate > Metadata > New Apex Class". Then from the popup click "Unit Test". Finally, name this class "HelloWorldTest".
 
@@ -121,6 +131,8 @@ Click "Mavens Mate > Unit Testing > Open Apex Test Runner UI".
 On the next screen, make sure the HelloWorldTest is selected and click the Run Tests button.
 
 ![](https://raw.githubusercontent.com/scottmotte/apex-hello-world/master/apex-hello-world-8.png)
+
+### You're done
 
 Congrats, you wrote your first Apex hello world code! 
 
